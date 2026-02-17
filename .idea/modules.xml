@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/StaticEnchantedItemRenderer.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/StaticEnchantedItemRenderer.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/StaticEnchantedItemRenderer.fabric.main.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/StaticEnchantedItemRenderer.fabric.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/fabric/StaticEnchantedItemRenderer.fabric.test.iml" filepath="$PROJECT_DIR$/.idea/modules/fabric/StaticEnchantedItemRenderer.fabric.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/StaticEnchantedItemRenderer.forge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/StaticEnchantedItemRenderer.forge.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/forge/StaticEnchantedItemRenderer.forge.test.iml" filepath="$PROJECT_DIR$/.idea/modules/forge/StaticEnchantedItemRenderer.forge.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/neoforge/StaticEnchantedItemRenderer.neoforge.main.iml" filepath="$PROJECT_DIR$/.idea/modules/neoforge/StaticEnchantedItemRenderer.neoforge.main.iml" />
+    </modules>
+  </component>
+</project>
