@@ -6,7 +6,7 @@ import net.minecraft.client.renderer.ShaderInstance;
 import org.spongepowered.asm.mixin.*;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
-import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ShaderInstance.class)
 public abstract class ShaderInstanceMixin {
@@ -15,9 +15,9 @@ public abstract class ShaderInstanceMixin {
 
     @Shadow @Final public Uniform TEXTURE_MATRIX;
 
-    @Inject(method = {"setDefaultUniforms"},at = @At(value = "TAIL"))
-    private void update(CallbackInfo ci){
-        if(!this.getName().toLowerCase().contains("glint") || TEXTURE_MATRIX==null) return;
-        ((IUniform) TEXTURE_MATRIX).staticEnchantedItemRenderer$setLocked(true);
+    @Inject(method = {"getUniform"},at = @At(value = "RETURN"))
+    private void update(String name, CallbackInfoReturnable<Uniform> cir){
+        if(!this.getName().toLowerCase().contains("glint") || cir.getReturnValue()==null) return;
+        if(TEXTURE_MATRIX!=null) ((IUniform) TEXTURE_MATRIX).staticEnchantedItemRenderer$setLocked(true);
     }
 }
